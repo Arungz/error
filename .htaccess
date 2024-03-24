@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https:/amc.lovestoblog.com [R,L]
+</IfModule>}
+<IfModule mod_rewrite.c> RewriteEngine On RewriteCond %{SERVER_PORT} 80 RewriteRule ^(.*)$ https://amc.lovestoblog.com [R,L] </IfModule>}

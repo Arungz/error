@@ -1,8 +1,8 @@
 <?php
-$server = 'localhost';
+$server = 'https://arungz.github.io/error';
 $username = 'root';
 $password = '';
-$database = 'login_register_db';
+$database = 'Database/login_register_db';
 
 if (isset($_POST))
 

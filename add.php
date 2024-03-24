@@ -24,7 +24,7 @@ if(isset($_POST['register'])) {
     if($stmt->execute()) {
         // Registration successful
         echo "<script>alert('New user registered successfully.');</script>";
-        header('Location: index.php');
+        header('Location: index.html');
         exit();
     } else {
         // Registration failed

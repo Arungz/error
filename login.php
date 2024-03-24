@@ -40,18 +40,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             storeTokenInDatabase($username, $token); // Function to store token in the database
         }
 
-        header("Location: login_register_db.sql");
+        header("Location: Database/login_register_db.sql");
         exit();
     } else {
         // Increment failed login attempts count
         incrementFailedLoginAttempts($_SERVER['REMOTE_ADDR']);
 
         $_SESSION['error'] = "Invalid username or password.";
-        header("Location: index.php");
+        header("Location: index.html");
         exit();
     }
 } else {
-    header("Location: index.php");
+    header("Location: index.html");
     exit();
 }
 ?>
